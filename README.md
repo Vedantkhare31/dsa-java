@@ -25,7 +25,8 @@ V:\Java
 │       └── SearchElement.java       # Linear search implementation
 └── String/
     └── src/
-        └── SmartTextCompression.java # Smart text compression via symmetric character difference
+        ├── SecureAccessTokenGenerator.java # Access token generation with paired diffs/sums
+        └── SmartTextCompression.java       # Smart text compression via symmetric character difference
 ```
 
 ---
@@ -48,6 +49,7 @@ V:\Java
 | # | Problem Name | Difficulty | Solution Link | Key Concepts / Approach |
 |:---:|:---|:---:|:---:|:---|
 | 1 | **Smart Text Compression** | `Hard` | [SmartTextCompression.java](String/src/SmartTextCompression.java) | Two-pointer inward character pairing, ASCII offset mapping, absolute differences |
+| 2 | **Secure Access Token Generator** | `Hard` | [SecureAccessTokenGenerator.java](String/src/SecureAccessTokenGenerator.java) | Inward pairing with zero-diff sum fallback, middle character scaling |
 
 ---
 

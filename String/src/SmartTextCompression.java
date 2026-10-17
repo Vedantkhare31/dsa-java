@@ -1,5 +1,4 @@
-/* 1: Smart Text Compression Code       Hard            30 minutes
-A document management system generates a compact numeric code for every document tle.
+/* A document management system generates a compact numeric code for every document tle.
 The system divides the tle into words and processes each word independently. For a word containing an even
 number of characters, pair the first character with the last, the second with the second-last, and so on.
 For a word containing an odd number of characters, process the outer pairs in the same manner and include the
@@ -19,7 +18,7 @@ class SmartTextCompression {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter sentence : ");
-        String sentence = sc.nextLine();
+        String sentence = sc.nextLine().toUpperCase();
         String result = "";
 
         int start = 0;
@@ -34,11 +33,6 @@ class SmartTextCompression {
                     int a = sentence.charAt(left);
                     int b = sentence.charAt(right);
 
-                    if (a >= 'a' && a <= 'z')
-                        a = a - 32;
-                    if (b >= 'a' && b <= 'z')
-                        b = b - 32;
-
                     a = a - 'A' + 1;
                     b = b - 'A' + 1;
 
@@ -52,9 +46,7 @@ class SmartTextCompression {
                 }
                 if(left == right){
                     int mid = sentence.charAt(left);
-                    if(mid >='a' && mid <= 'z'){
-                        mid = mid - 32;
-                    }
+
                     mid = mid - 'A' +1 ;
                     result = result + mid ;
                 }
