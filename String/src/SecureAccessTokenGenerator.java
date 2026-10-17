@@ -67,6 +67,7 @@ class SecureAccessTokenGenerator{
 
                     result= result + mid;
                 }
+                start = i+1;
             }
         }
         System.out.println(result);

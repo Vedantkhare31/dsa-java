@@ -25,8 +25,12 @@ V:\Java
 │       └── SearchElement.java       # Linear search implementation
 └── String/
     └── src/
-        ├── SecureAccessTokenGenerator.java # Access token generation with paired diffs/sums
-        └── SmartTextCompression.java       # Smart text compression via symmetric character difference
+        ├── BankingTransactionReferenceEncoder.java # Adjacent-pair absolute difference encoding
+        ├── CybersecurityMessageFingerprint.java    # Overlapping-pair difference/sum fingerprinting
+        ├── InventoryLabelTransformation.java       # Inward-pair odd/even difference parity scaling
+        ├── SecureAccessTokenGenerator.java        # Access token generation with paired diffs/sums
+        ├── SmartTextCompression.java              # Smart text compression via symmetric character difference
+        └── StudentPerformanceCode.java            # Inward-pair alphabet position sum with 26-wrapping
 ```
 
 ---
@@ -50,6 +54,10 @@ V:\Java
 |:---:|:---|:---:|:---:|:---|
 | 1 | **Smart Text Compression** | `Hard` | [SmartTextCompression.java](String/src/SmartTextCompression.java) | Two-pointer inward character pairing, ASCII offset mapping, absolute differences |
 | 2 | **Secure Access Token Generator** | `Hard` | [SecureAccessTokenGenerator.java](String/src/SecureAccessTokenGenerator.java) | Inward pairing with zero-diff sum fallback, middle character scaling |
+| 3 | **Banking Transaction Reference Encoder** | `Medium` | [BankingTransactionReferenceEncoder.java](String/src/BankingTransactionReferenceEncoder.java) | Adjacent consecutive character differences, single-character fallback |
+| 4 | **Cybersecurity Message Fingerprint** | `Medium` | [CybersecurityMessageFingerprint.java](String/src/CybersecurityMessageFingerprint.java) | Overlapping consecutive pairs, nonzero-diff vs zero-diff sum logic |
+| 5 | **Inventory Label Transformation** | `Medium` | [InventoryLabelTransformation.java](String/src/InventoryLabelTransformation.java) | Inward pairing, odd difference doubling, even difference halving, middle char |
+| 6 | **Student Performance Code** | `Medium` | [StudentPerformanceCode.java](String/src/StudentPerformanceCode.java) | Inward pairing sum, modulo-like 26 range wrapping, middle char preservation |
 
 ---
 
