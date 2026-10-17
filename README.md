@@ -25,7 +25,7 @@ V:\Java
 │       └── SearchElement.java       # Linear search implementation
 └── String/
     └── src/
-        └── Main.java                # ASCII character mapping & symmetric reduction
+        └── SmartTextCompression.java # Smart text compression via symmetric character difference
 ```
 
 ---
@@ -47,7 +47,7 @@ V:\Java
 
 | # | Problem Name | Difficulty | Solution Link | Key Concepts / Approach |
 |:---:|:---|:---:|:---:|:---|
-| 1 | **Character Mapping & Symmetric Word Value** | `Medium` | [Main.java](String/src/Main.java) | Character manipulation, ASCII offsets, two-pointer inward symmetry |
+| 1 | **Smart Text Compression** | `Hard` | [SmartTextCompression.java](String/src/SmartTextCompression.java) | Two-pointer inward character pairing, ASCII offset mapping, absolute differences |
 
 ---
 
