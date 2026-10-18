@@ -25,10 +25,12 @@ V:\Java
 │       └── SearchElement.java       # Linear search implementation
 └── String/
     └── src/
+        ├── AIBasedDocumentSignature.java          # Sum of alphabet positions multiplied by distinct characters
         ├── BankingTransactionReferenceEncoder.java # Adjacent-pair absolute difference encoding
         ├── CybersecurityMessageFingerprint.java    # Overlapping-pair difference/sum fingerprinting
         ├── InventoryLabelTransformation.java       # Inward-pair odd/even difference parity scaling
         ├── SecureAccessTokenGenerator.java        # Access token generation with paired diffs/sums
+        ├── SmartLogisticsRouteEncoder.java        # Inward-pair difference scaled by length with digit-sum reduction
         ├── SmartTextCompression.java              # Smart text compression via symmetric character difference
         └── StudentPerformanceCode.java            # Inward-pair alphabet position sum with 26-wrapping
 ```
@@ -58,6 +60,8 @@ V:\Java
 | 4 | **Cybersecurity Message Fingerprint** | `Medium` | [CybersecurityMessageFingerprint.java](String/src/CybersecurityMessageFingerprint.java) | Overlapping consecutive pairs, nonzero-diff vs zero-diff sum logic |
 | 5 | **Inventory Label Transformation** | `Medium` | [InventoryLabelTransformation.java](String/src/InventoryLabelTransformation.java) | Inward pairing, odd difference doubling, even difference halving, middle char |
 | 6 | **Student Performance Code** | `Medium` | [StudentPerformanceCode.java](String/src/StudentPerformanceCode.java) | Inward pairing sum, modulo-like 26 range wrapping, middle char preservation |
+| 7 | **AI-Based Document Signature** | `Medium` | [AIBasedDocumentSignature.java](String/src/AIBasedDocumentSignature.java) | Alphabet position summation, distinct character counting, product hashing |
+| 8 | **Smart Logistics Route Encoder** | `Hard` | [SmartLogisticsRouteEncoder.java](String/src/SmartLogisticsRouteEncoder.java) | Inward pairing, length scaling, repeated digit-sum reduction ($\le 99$) |
 
 ---
 
