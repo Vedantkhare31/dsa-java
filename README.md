@@ -23,12 +23,23 @@ V:\Java
 │       ├── MinMax.java              # Min and Max search without sorting
 │       ├── ReverseArray.java        # In-place reversal using two pointers
 │       └── SearchElement.java       # Linear search implementation
+├── Patterns/
+│   ├── FloydsTrianglePattern.java         # Floyd's triangle with continuous numbers
+│   ├── FramePattern.java                  # Hollow rectangle / frame pattern
+│   ├── InvertedNumberTrianglePattern.java # Decreasing number triangle
+│   ├── InvertedTrianglePattern.java       # Mirrored triangle with leading spaces
+│   ├── RectanglePattern.java              # Solid rectangle pattern
+│   ├── ReverseTrianglePattern.java        # Inverted right-angled triangle
+│   ├── TrianglePattern.java               # Standard right-angled triangle
+│   ├── TriangleWithNumbersPattern.java    # Increasing number triangle
+│   └── ZeroOneTrianglePattern.java        # Alternating 0-1 triangle pattern
 └── String/
     └── src/
         ├── AIBasedDocumentSignature.java          # Sum of alphabet positions multiplied by distinct characters
         ├── BankingTransactionReferenceEncoder.java # Adjacent-pair absolute difference encoding
         ├── CybersecurityMessageFingerprint.java    # Overlapping-pair difference/sum fingerprinting
         ├── InventoryLabelTransformation.java       # Inward-pair odd/even difference parity scaling
+        ├── ResearchPaperMetadataEncoder.java      # Absolute diff between alphabet sum and distinct count squared
         ├── SecureAccessTokenGenerator.java        # Access token generation with paired diffs/sums
         ├── SmartLogisticsRouteEncoder.java        # Inward-pair difference scaled by length with digit-sum reduction
         ├── SmartTextCompression.java              # Smart text compression via symmetric character difference
@@ -50,6 +61,20 @@ V:\Java
 | 5 | **Reverse an Array** | `Easy` | [ReverseArray.java](Array/src/ReverseArray.java) | Two-pointer technique, $O(1)$ auxiliary space |
 | 6 | **Linear Search** | `Easy` | [SearchElement.java](Array/src/SearchElement.java) | Linear scanning, early break / index reporting |
 
+### 📐 Pattern Printing
+
+| # | Pattern Name | Difficulty | Solution Link | Key Concepts / Approach |
+|:---:|:---|:---:|:---:|:---|
+| 1 | **Solid Rectangle Pattern** | `Easy` | [RectanglePattern.java](Patterns/RectanglePattern.java) | Nested rows & columns loop iteration |
+| 2 | **Hollow Frame Pattern** | `Easy` | [FramePattern.java](Patterns/FramePattern.java) | Matrix border conditionals (`i == 0 \|\| i == r-1 \|\| j == 0 \|\| j == c-1`) |
+| 3 | **Right-Angled Triangle** | `Easy` | [TrianglePattern.java](Patterns/TrianglePattern.java) | Dependent inner loop bounds (`j < i`) |
+| 4 | **Inverted Right-Angled Triangle** | `Easy` | [ReverseTrianglePattern.java](Patterns/ReverseTrianglePattern.java) | Decreasing loop iteration (`i = rows; i >= 0; i--`) |
+| 5 | **Mirrored Inverted Triangle** | `Easy` | [InvertedTrianglePattern.java](Patterns/InvertedTrianglePattern.java) | Two inner loops: leading space indentation + asterisk printing |
+| 6 | **Number Triangle** | `Easy` | [TriangleWithNumbersPattern.java](Patterns/TriangleWithNumbersPattern.java) | 1-based column index printing (`1` to `i`) |
+| 7 | **Inverted Number Triangle** | `Easy` | [InvertedNumberTrianglePattern.java](Patterns/InvertedNumberTrianglePattern.java) | Inverted row-bound inner number printing |
+| 8 | **Floyd's Triangle** | `Easy` | [FloydsTrianglePattern.java](Patterns/FloydsTrianglePattern.java) | Continuous sequence increment with persistent counter |
+| 9 | **0-1 Alternating Triangle** | `Easy` | [ZeroOneTrianglePattern.java](Patterns/ZeroOneTrianglePattern.java) | Coordinate parity check (`(i + j) % 2 == 0`) |
+
 ### 🔤 Strings
 
 | # | Problem Name | Difficulty | Solution Link | Key Concepts / Approach |
@@ -62,6 +87,7 @@ V:\Java
 | 6 | **Student Performance Code** | `Medium` | [StudentPerformanceCode.java](String/src/StudentPerformanceCode.java) | Inward pairing sum, modulo-like 26 range wrapping, middle char preservation |
 | 7 | **AI-Based Document Signature** | `Medium` | [AIBasedDocumentSignature.java](String/src/AIBasedDocumentSignature.java) | Alphabet position summation, distinct character counting, product hashing |
 | 8 | **Smart Logistics Route Encoder** | `Hard` | [SmartLogisticsRouteEncoder.java](String/src/SmartLogisticsRouteEncoder.java) | Inward pairing, length scaling, repeated digit-sum reduction ($\le 99$) |
+| 9 | **Research Paper Metadata Encoder** | `Medium` | [ResearchPaperMetadataEncoder.java](String/src/ResearchPaperMetadataEncoder.java) | Alphabet sum, unique character count tracking, squared difference hashing |
 
 ---
 
@@ -91,6 +117,7 @@ java -cp Array/src ReverseArray
 
 ## 📈 Roadmap & Ongoing Topics
 - [x] Basic Arrays & In-Place Manipulations
+- [x] Pattern Printing & Nested Loops
 - [x] Basic String Operations & ASCII Encoding
 - [ ] 2D Arrays / Matrices
 - [ ] Recursion & Backtracking
