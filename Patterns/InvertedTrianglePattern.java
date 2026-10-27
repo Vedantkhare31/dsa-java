@@ -1,3 +1,13 @@
+/*
+
+ *
+ * *
+ * * *
+ * * * *
+ * * * * *
+
+ */
+
 import java.util.*;
 public class InvertedTrianglePattern {
     public static void main(String[] args){

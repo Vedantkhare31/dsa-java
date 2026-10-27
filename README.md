@@ -24,12 +24,17 @@ V:\Java
 │       ├── ReverseArray.java        # In-place reversal using two pointers
 │       └── SearchElement.java       # Linear search implementation
 ├── Patterns/
+│   ├── ButterflyStarPattern.java          # Butterfly star pattern with symmetric wings
+│   ├── DiamondPattern.java                # Diamond star pattern with expanding/contracting rows
 │   ├── FloydsTrianglePattern.java         # Floyd's triangle with continuous numbers
 │   ├── FramePattern.java                  # Hollow rectangle / frame pattern
 │   ├── InvertedNumberTrianglePattern.java # Decreasing number triangle
 │   ├── InvertedTrianglePattern.java       # Mirrored triangle with leading spaces
+│   ├── NumberPyramidPattern.java          # Centered pyramid of repeating row numbers
+│   ├── PalindromicPyramidPattern.java     # Palindromic numeric pyramid with reverse counts
 │   ├── RectanglePattern.java              # Solid rectangle pattern
 │   ├── ReverseTrianglePattern.java        # Inverted right-angled triangle
+│   ├── SolidRhombusPattern.java           # Solid rhombus pattern with leading indentation
 │   ├── TrianglePattern.java               # Standard right-angled triangle
 │   ├── TriangleWithNumbersPattern.java    # Increasing number triangle
 │   └── ZeroOneTrianglePattern.java        # Alternating 0-1 triangle pattern
@@ -74,6 +79,11 @@ V:\Java
 | 7 | **Inverted Number Triangle** | `Easy` | [InvertedNumberTrianglePattern.java](Patterns/InvertedNumberTrianglePattern.java) | Inverted row-bound inner number printing |
 | 8 | **Floyd's Triangle** | `Easy` | [FloydsTrianglePattern.java](Patterns/FloydsTrianglePattern.java) | Continuous sequence increment with persistent counter |
 | 9 | **0-1 Alternating Triangle** | `Easy` | [ZeroOneTrianglePattern.java](Patterns/ZeroOneTrianglePattern.java) | Coordinate parity check (`(i + j) % 2 == 0`) |
+| 10 | **Solid Rhombus** | `Easy` | [SolidRhombusPattern.java](Patterns/SolidRhombusPattern.java) | Leading space offset (`rows - i`) with fixed width asterisks |
+| 11 | **Number Pyramid** | `Easy` | [NumberPyramidPattern.java](Patterns/NumberPyramidPattern.java) | Center-aligned pyramid with space-separated row numbers |
+| 12 | **Palindromic Number Pyramid** | `Medium` | [PalindromicPyramidPattern.java](Patterns/PalindromicPyramidPattern.java) | Leading spaces + descending sequence (`i` to `1`) + ascending sequence (`2` to `i`) |
+| 13 | **Diamond Star Pattern** | `Medium` | [DiamondPattern.java](Patterns/DiamondPattern.java) | Symmetric upper & lower pyramids using odd star counts (`2*i - 1`) |
+| 14 | **Butterfly Star Pattern** | `Medium` | [ButterflyStarPattern.java](Patterns/ButterflyStarPattern.java) | Two symmetric star wings with dynamic center gap (`2 * (rows - i)`) |
 
 ### 🔤 Strings
 

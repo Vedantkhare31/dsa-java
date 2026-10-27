@@ -1,3 +1,12 @@
+/*
+
+ *
+ * *
+ * * *
+ * * * *
+ * * * * *
+
+ */
 import java.util.*;
 public class TrianglePattern {
     public static void main(String[] args){

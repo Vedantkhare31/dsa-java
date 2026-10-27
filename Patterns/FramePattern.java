@@ -1,3 +1,13 @@
+/*
+ * * * * *
+ *       *
+ *       *
+ *       *
+ * * * * *
+
+ */
+
+
 import java.util.*;
 public class FramePattern {
     public static void main(String[] args){

@@ -1,3 +1,11 @@
+/*
+ 1
+ 0 1
+ 1 0 1
+ 0 1 0 1
+ 1 0 1 0 1
+ */
+
 import java.util.*;
 public class ZeroOneTrianglePattern {
     public static void main(String[] args) {
@@ -6,7 +14,7 @@ public class ZeroOneTrianglePattern {
         System.out.print("Enter the number of rows : ");
         int rows = sc.nextInt();
 
-        for(int i = 0 ; i<rows ; i++){
+        for(int i = 1 ; i<=rows ; i++){
             for(int j = 1;j<=i; j++){
                 int sum = i+j;
                 if(sum % 2 == 0){

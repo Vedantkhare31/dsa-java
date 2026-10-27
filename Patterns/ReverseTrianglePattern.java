@@ -1,3 +1,13 @@
+/*
+
+ * * * * *
+ * * * *
+ * * *
+ * *
+ *
+
+ */
+
 import java.util.*;
 public class ReverseTrianglePattern {
     public static void main(String[] args){
